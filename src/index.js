@@ -19,6 +19,17 @@ decrementButton.addEventListener('click', e => dispatch({ type: "DECREMENT"}));
 const incrByFive = document.getElementById('incrByFive');
 incrByFive.addEventListener('click', e => dispatch({ type: "INCRBYFIVE" }));
 
-// Dispatch the "INCRBYFIVE" action every time the +5 button is pressed
+// Dispatch the "DECRBYFIVE" action every time the +5 button is pressed
 const decrByFive = document.getElementById('decrByFive');
 decrByFive.addEventListener('click', e => dispatch({ type: "DECRBYFIVE" }));
+
+const colors = document.getElementById('colors');
+colors.addEventListener('change', e => {
+    if (colors.value == 'blue') {
+        dispatch({ type: "COLORBLUE" })
+    } else if (colors.value == 'green') {
+        dispatch({ type: "COLORGREEN" })
+    } else if (colors.value == 'red') {
+        dispatch({ type: "COLORRED" })
+    }
+})
