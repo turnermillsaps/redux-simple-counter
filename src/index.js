@@ -13,4 +13,12 @@ incrementButton.addEventListener('click', e => dispatch({ type: "INCREMENT" }));
 
 // Dispatch the "DECREMENT" action every time the -1 button is pressed
 const decrementButton = document.getElementById('decrement');
-decrementButton.addEventListener('click', e => dispatch({ type: "DECREMENT"}))
+decrementButton.addEventListener('click', e => dispatch({ type: "DECREMENT"}));
+
+// Dispatch the "INCRBYFIVE" action every time the +5 button is pressed
+const incrByFive = document.getElementById('incrByFive');
+incrByFive.addEventListener('click', e => dispatch({ type: "INCRBYFIVE" }));
+
+// Dispatch the "INCRBYFIVE" action every time the +5 button is pressed
+const decrByFive = document.getElementById('decrByFive');
+decrByFive.addEventListener('click', e => dispatch({ type: "DECRBYFIVE" }));
